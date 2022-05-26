@@ -10,7 +10,8 @@ namespace Asteroids.Decorator
         private AudioClip _audioClip;
         private readonly AudioSource _audioSource;
 
-        public Weapon(IAmmunition bullet, Transform barrelPosition, float force, AudioSource audioSource, AudioClip audioClip)
+        public Weapon(IAmmunition bullet, Transform barrelPosition, float force, 
+            AudioSource audioSource, AudioClip audioClip)
         {
             _bullet = bullet;
             _barrelPosition = barrelPosition;

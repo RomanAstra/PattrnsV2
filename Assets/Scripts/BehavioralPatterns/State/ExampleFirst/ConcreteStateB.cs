@@ -2,14 +2,14 @@
 {
     public sealed class ConcreteStateB : State
     {
-        public override void Handle(Context context)
+        public override void Handle(Player player)
         {
-            if (context.Hp > 0)
+            if (player.Hp > 0)
             {
                 
             }
                 
-            context.State = new ConcreteStateA();
+            player.State = new ConcreteStateA();
         }
     }
 }

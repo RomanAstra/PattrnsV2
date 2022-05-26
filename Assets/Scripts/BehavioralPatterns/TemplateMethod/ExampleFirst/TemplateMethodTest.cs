@@ -6,7 +6,7 @@ namespace BehavioralPatterns.TemplateMethod.ExampleFirst
     {
         private void Start()
         {
-            Site vk = new VK();
+            Site vk = new Gb();
             vk.Draw();
         }
     }

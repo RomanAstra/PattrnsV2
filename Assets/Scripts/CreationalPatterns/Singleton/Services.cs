@@ -7,10 +7,12 @@ namespace Asteroids.Singleton
 {
     public sealed class Services
     {
-        private readonly Collider[] _collidedObjects;
-        private readonly List<Collider> _triggeredObjects;
+        private readonly Collider[] _collidedObjects = new Collider[10];
+        private readonly List<Collider> _triggeredObjects = new ();
+        
         private static readonly Lazy<Services> _instance = 
-            new Lazy<Services>(() => new Services(), LazyThreadSafetyMode.ExecutionAndPublication);
+            new Lazy<Services>(() => new Services(), 
+                LazyThreadSafetyMode.ExecutionAndPublication);
         
         public static Services Instance => _instance.Value;
         
@@ -28,7 +30,8 @@ namespace Asteroids.Singleton
             _triggeredObjects.Clear();
             Collider trigger;
 
-            var collidersCount = Physics.OverlapSphereNonAlloc(position, radius, _collidedObjects, layerMask);
+            var collidersCount = Physics.OverlapSphereNonAlloc(position, radius, 
+                _collidedObjects);
             
             for (var i = 0; i < collidersCount; i++)
             {
@@ -41,6 +44,11 @@ namespace Asteroids.Singleton
             }
 
             return _triggeredObjects;
+        }
+
+        public void Next()
+        {
+            
         }
     }
 }

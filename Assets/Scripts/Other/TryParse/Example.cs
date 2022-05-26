@@ -42,12 +42,15 @@ namespace TryParse
     {
         private void NameMethod()
         {
+            var component = gameObject.GetComponent<Rigidbody>();
+            component.AddForce(Vector3.zero * 999.0f);
+            
             if (gameObject.TryGetComponent(out Rigidbody rigidbody))
             {
                 rigidbody.AddForce(Vector3.zero * 999.0f);
             }
 
-            if (int.TryParse("9", out int y))
+            if (int.TryParse("tgdhjtfj", out int y))
             {
                 Debug.Log(y);
             }

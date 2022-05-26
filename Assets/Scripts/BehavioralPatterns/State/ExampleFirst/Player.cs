@@ -2,12 +2,12 @@
 
 namespace BehavioralPatterns.State.ExampleFirst
 {
-    public sealed class Context
+    public sealed class Player
     {
         public float Hp;
         private State _state;
 
-        public Context(State state)
+        public Player(State state)
         {
             State = state;
         }

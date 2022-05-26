@@ -17,13 +17,21 @@ namespace Asteroids.Prototype
                 Speed = 100
             };
             
-            PlayerData playerDataNew = playerData.DeepCopy();
+            PlayerData playerDataNew = (PlayerData)playerData.Clone();
             playerDataNew.Hp.CurrentHP = 200;
+
+            PlayerData playerDataNewNew = playerData.DeepCopy();
+            playerDataNewNew.Hp.CurrentHP = 42;
+
+            PlayerData playerDataNewNewNew = playerData;
+            playerDataNewNewNew.Hp.CurrentHP = 43;
             
             Debug.Log(playerData);
             Debug.Log(playerDataNew);
+            Debug.Log(playerDataNewNew);
+            Debug.Log(playerDataNewNewNew);
 
-            Instantiate(_prefab);
+            // Instantiate(_prefab);
         }
     }
 }

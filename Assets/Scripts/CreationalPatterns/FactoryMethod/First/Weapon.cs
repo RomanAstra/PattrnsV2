@@ -1,20 +1,24 @@
+using ObjectPool;
 using UnityEngine;
 
 namespace Asteroids.First
 {
-    class Weapon : IWeapon
+    public sealed class Weapon : IWeapon
     {
-        private readonly Rigidbody _prefab;
+        private readonly Rigidbody _prefabBullet;
+        private readonly IViewServices _viewServices;
 
-        public Weapon(Rigidbody prefab)
+        public Weapon(Rigidbody prefabBullet, IViewServices viewServices)
         {
-            _prefab = prefab;
+            _prefabBullet = prefabBullet;
+            _viewServices = viewServices;
         }
         
         public void Fire()
         {
-            var bullet = Object.Instantiate(_prefab);
+            var bullet = _viewServices.Instantiate<Rigidbody>(_prefabBullet.gameObject);
             bullet.AddForce(Vector3.forward);
+            _viewServices.Destroy(bullet.gameObject);
         }
     }
 }

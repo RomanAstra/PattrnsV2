@@ -6,7 +6,7 @@ namespace BehavioralPatterns.State.ExampleFirst
     {
         private void Start ()
         {
-            Context c = new Context(new ConcreteStateA());
+            Player c = new Player(new ConcreteStateA());
 
             c.Request();
             c.Request();

@@ -16,11 +16,11 @@ namespace Asteroids.Composite
             _attacks.Remove(attack);
         }
         
-        public void Attack()
+        public void Attack(Unit unit)
         {
             foreach (var attack in _attacks)
             {
-                attack.Attack();
+                attack.Attack(unit);
             }
         }
     }

@@ -6,6 +6,7 @@ namespace Asteroids.Singleton
     {
         private void Start()
         {
+            // new Services();
             Services.Instance.Test();
             TestSingletonMonoBehaviour.Instance.Test();
         }
@@ -14,9 +15,11 @@ namespace Asteroids.Singleton
         {
             if (Input.GetKeyDown(KeyCode.Space))
             {
-                foreach (var objectsInRadius in Services.Instance.GetObjectsInRadius(transform.position, 50.0f))
+                var colliders = Services.Instance
+                    .GetObjectsInRadius(transform.position, 500.0f);
+                foreach (var objectsInRadius in colliders)
                 {
-                    Debug.Log(objectsInRadius.name);
+                    Debug.LogError(objectsInRadius.name);
                 }
             }
         }

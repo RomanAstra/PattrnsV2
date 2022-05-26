@@ -18,8 +18,9 @@ namespace Asteroids.Interpreter
         {
             if (Int64.TryParse(value, out var number))
             {
-                 _text.text = ToRoman(number);
-                 
+                   _text.text = ToRoman(number);
+                 //_text.text = number.ToAbbreviatedString();
+                  // x + y - (i + j) * t
                  // 6 + 8 - (10 + 5) * 2
             }
         }

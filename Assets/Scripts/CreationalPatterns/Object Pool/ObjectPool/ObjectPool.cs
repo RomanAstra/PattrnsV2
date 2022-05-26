@@ -1,9 +1,11 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
+using Object = UnityEngine.Object;
 
 namespace ObjectPool
 {
-    internal sealed class ObjectPool
+    internal sealed class ObjectPool : IDisposable
     {
         private readonly Stack<GameObject> _stack = new Stack<GameObject>();
         private readonly GameObject _prefab;
@@ -37,6 +39,16 @@ namespace ObjectPool
             _stack.Push(go);
             go.transform.SetParent(_root);
             go.SetActive(false);
+        }
+
+        public void Dispose()
+        {
+            for (var i = 0; i < _stack.Count; i++)
+            {
+                var gameObject = _stack.Pop();
+                Object.Destroy(gameObject);
+            }
+            Object.Destroy(_root.gameObject);
         }
     }
 }

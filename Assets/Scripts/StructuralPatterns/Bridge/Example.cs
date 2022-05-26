@@ -6,7 +6,7 @@ namespace Asteroids.Bridge
     {
         private void Start()
         {
-            var enemy = new Enemy(new MagicalAttack(), new Infantry());
+            var enemy = new Enemy(new MagicalAttack(), new MoveSw());
             enemy.SwitchMove(new MoveSw());
         }
     }

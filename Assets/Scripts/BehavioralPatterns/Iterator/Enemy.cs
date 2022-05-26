@@ -7,7 +7,7 @@ namespace Asteroids.Iterator
 {
     internal sealed class Enemy : IEnemy
     {
-        private List<IAbility> _ability;
+        private readonly List<IAbility> _ability;
 
         public Enemy(List<IAbility> ability)
         {

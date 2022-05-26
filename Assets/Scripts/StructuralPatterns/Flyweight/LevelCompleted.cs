@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace Asteroids.Flyweight
@@ -20,7 +21,14 @@ namespace Asteroids.Flyweight
                 return isCompleted;
             }
 
-            PlayerPrefs.SetString(GetPrefsKey(level), false.ToString());
+            if (PlayerPrefs.HasKey(GetPrefsKey(level)))
+            {
+                isCompleted = Boolean.Parse(PlayerPrefs.GetString(GetPrefsKey(level)));
+            }
+            else
+            {
+                PlayerPrefs.SetString(GetPrefsKey(level), false.ToString());
+            }
             _cache[level] = isCompleted;
             return isCompleted;
         }

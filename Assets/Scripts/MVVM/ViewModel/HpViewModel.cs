@@ -15,8 +15,7 @@ namespace MVVM.ViewModel
         {
             HpModel = hpModel;
         }
-        
-        
+
         public void ApplyDamage(float damage)
         {
             HpModel.CurrentHp -= damage;

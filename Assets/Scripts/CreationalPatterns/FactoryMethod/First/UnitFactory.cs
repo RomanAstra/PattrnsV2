@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 namespace Asteroids.First
 {
@@ -16,7 +17,17 @@ namespace Asteroids.First
             return new Player(hp, _weaponFactory.CreateWeapon<Gun>(), position);
         }
 
-        public IUnit CreateEnemy(float hp, Vector3 position)
+        public IUnit CreatePlayerImmortal(Vector3 position)
+        {
+            return CreatePlayer(Single.MaxValue, position);
+        }
+
+        public IUnit CreatePlayerInStartPosition(float hp)
+        {
+            return CreatePlayer(hp, Vector3.zero);
+        }
+
+        public IUnit CreateEnemy(float hp)
         {
             return new Enemy();
         }

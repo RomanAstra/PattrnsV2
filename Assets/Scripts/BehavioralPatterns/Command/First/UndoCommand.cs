@@ -13,7 +13,7 @@ namespace Asteroids.Command.First
             _commands = commands;
         }
 
-        public bool Execute(Transform box)
+        public bool TryExecute()
         {
             if (_commands.Count > 0)
             {
@@ -21,7 +21,7 @@ namespace Asteroids.Command.First
 
                 if (latestCommand.Succeeded)
                 {
-                    latestCommand.Undo(box);
+                    latestCommand.Undo();
 
                     _commands.RemoveAt(_commands.Count - 1);
                     Succeeded = true;
@@ -32,7 +32,7 @@ namespace Asteroids.Command.First
             return Succeeded;
         }
 
-        public void Undo(Transform box)
+        public void Undo()
         {
         }
     }

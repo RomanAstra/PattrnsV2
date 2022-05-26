@@ -6,7 +6,6 @@ namespace Optimization
     public sealed class ExampleThree : MonoBehaviour
     {
         private List<int> _myList = new List<int>();
-        private readonly string _playerTag = "Player";
 
         private void Update()
         {
@@ -18,11 +17,6 @@ namespace Optimization
         private void PopulateList(List<int> list)
         {
             //...
-        }
-
-        private void OnTriggerEnter(Collider other)
-        {
-            bool isPlayer = other.gameObject.CompareTag(_playerTag);
         }
     }
 }

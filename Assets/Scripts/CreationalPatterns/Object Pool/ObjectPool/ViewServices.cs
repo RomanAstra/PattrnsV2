@@ -1,15 +1,16 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Threading;
 using UnityEngine;
 
 namespace ObjectPool
 {
-    internal sealed class ViewServices
+    internal sealed class ViewServices : IViewServices
     {
         private readonly Dictionary<string, ObjectPool> _viewCache 
             = new Dictionary<string, ObjectPool>(12);
         
-        public void Instantiate(GameObject prefab)
+        public T Instantiate<T>(GameObject prefab)
         {
             if (!_viewCache.TryGetValue(prefab.name, out ObjectPool viewPool))
             {
@@ -17,7 +18,12 @@ namespace ObjectPool
                 _viewCache[prefab.name] = viewPool;
             }
 
-            viewPool.Pop();
+            if (viewPool.Pop().TryGetComponent(out T component))
+            {
+                return component;
+            }
+
+            throw new InvalidOperationException($"{typeof(T)} not found");
         }
 
         public void Destroy(GameObject value)

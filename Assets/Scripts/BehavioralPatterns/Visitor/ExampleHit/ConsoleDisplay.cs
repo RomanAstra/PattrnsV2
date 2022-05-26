@@ -12,17 +12,22 @@ namespace Visitor.ExampleHit
 
         public void Visit(Environment hit, InfoCollision info)
         {
-            Debug.Log($"{nameof(Environment)} - {info.Damage}");
+            Debug.LogWarning($"{nameof(Environment)} - {info.Damage}");
         }
 
         public void Visit(Knight hit, InfoCollision info)
         {
-            Debug.Log($"{nameof(Knight)} - {info.Damage}");
+            Debug.LogError($"{nameof(Knight)} - {info.Damage}");
         }
 
         public void Visit(Mob hit, InfoCollision info)
         {
             Debug.Log($"{nameof(Mob)} - {info.Damage}");
+        }
+
+        public void Visit(HitImpl hit, InfoCollision info)
+        {
+            Debug.Log($"Destroy {hit.name}");
         }
     }
 }

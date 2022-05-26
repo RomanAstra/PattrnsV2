@@ -5,24 +5,26 @@ namespace Asteroids.Command.First
     internal sealed class MoveLeft : ICommand
     {
         private readonly float _moveDistance;
+        private readonly Transform _box;
 
         public bool Succeeded { get; private set; }
 
-        public MoveLeft(float moveDistance)
+        public MoveLeft(float moveDistance, Transform box)
         {
             _moveDistance = moveDistance;
+            _box = box;
         }
 
-        public bool Execute(Transform box)
+        public bool TryExecute()
         {
-            box.Translate(-box.right * _moveDistance);
+            _box.Translate(-_box.right * _moveDistance);
             Succeeded = true;
             return Succeeded;
         }
 
-        public void Undo(Transform box)
+        public void Undo()
         {
-            box.Translate(box.right * _moveDistance);
+            _box.Translate(_box.right * _moveDistance);
         }
     }
 }

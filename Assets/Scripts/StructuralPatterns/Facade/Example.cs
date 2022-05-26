@@ -10,7 +10,7 @@ namespace Asteroids.Facade
         private void Start()
         {
             var gameService = new GameService();
-            gameService.Start(_mapSize,  _userName);
+            gameService.Start(_mapSize, _userName);
         }
     }
 }

@@ -2,6 +2,6 @@
 {
     public interface IAttack
     {
-        void Attack();
+        void Attack(Unit unit);
     }
 }

@@ -13,8 +13,6 @@ namespace Asteroids.Second
             mainObject._point = point;
 
             return mainObject;
-
-            // Task.Factory.StartNew()
         }
     }
 }

@@ -9,7 +9,7 @@ namespace Other.NullObject.FirstExample
         
         private void Start()
         {
-            Doing.Invoke();
+            if (Doing != null) Doing.Invoke();
             // Пример в паттерне команда класс DoNothing
 
             InjectDependency(new TestNullObject());
@@ -33,5 +33,32 @@ namespace Other.NullObject.FirstExample
     internal class TestNullObject : ITest
     {
         
+    }
+
+    internal class Player : MonoBehaviour
+    {
+        private int _hp;
+        public event Action IsDeath = () => { };
+
+        private void Update()
+        {
+            if (_hp <= 0)
+            {
+                IsDeath.Invoke();
+            }
+        }
+    }
+
+    internal class Display
+    {
+        public Display(Player player)
+        {
+            player.IsDeath += PlayerOnIsDeath;
+        }
+
+        private void PlayerOnIsDeath()
+        {
+            ///
+        }
     }
 }

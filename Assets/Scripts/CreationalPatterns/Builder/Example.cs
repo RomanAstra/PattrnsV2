@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Text;
+using UnityEngine;
 
 namespace Asteroids.Builder
 {
@@ -10,13 +11,17 @@ namespace Asteroids.Builder
         {
             #region MyRegion
 
-            // StringBuilder
+            // StringBuilder sb;
+            // sb.Append("");
 
             #endregion
             
             var gameObjectBuilder = new GameObjectBuilder();
-            GameObject player = gameObjectBuilder.Visual.Name("Roman").Sprite(_sprite)
-                .Physics.Rigidbody2D(5)
+            GameObject player = gameObjectBuilder
+                .Visual
+                .Name("Roman")
+                .Sprite(_sprite)
+                .Physics
                 .BoxCollider2D();
         }
         

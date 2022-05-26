@@ -1,4 +1,5 @@
 ﻿ using System;
+ using System.Reflection;
  using System.Runtime.CompilerServices;
  using UnityEngine;
 
@@ -16,6 +17,7 @@
         {
             BuiltInColorUtility();
             _animator.SetTrigger(Run);
+            _animator.SetTrigger("Run");
         }
 
         private void Update()
@@ -51,9 +53,8 @@
         private void NonAllocatingPhysics()
         {
             //Physics.RaycastNonAlloc()
-            //Physics.OverlapSphereNonAlloc()
-
-
+            // var colliders = new Collider[8];
+            // Physics.OverlapSphereNonAlloc(transform.position, 5.0f, colliders);
         }
 
         private void NullComparisons()
@@ -80,6 +81,13 @@
         private void BuiltInColorUtility()
         {
             string htmlStringRgb = ColorUtility.ToHtmlStringRGB(Color.cyan);
+        }
+
+        private void Min()
+        {
+            // Лямды
+            // Линки
+            // for лучше чем foreach
         }
     }
 }

@@ -11,10 +11,12 @@ namespace BehavioralPatterns.Observer.Asteroid
 
         private void Add(IDeath death)
         {
-            death.OnDeathChange += () =>
-            {
-                DeathOnOnDeathChange(death.Name);
-            }; 
+            death.OnDeathChange += DeathOnOnDeathChange; 
+        }
+
+        private void Remove(IDeath death)
+        {
+            // death.OnDeathChange -= delegate { DeathOnOnDeathChange(death.Name); }; 
         }
 
         private void DeathOnOnDeathChange(string deathName)

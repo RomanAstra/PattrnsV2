@@ -18,54 +18,53 @@ namespace Asteroids.Command.First
         private void Start()
         {
             _buttonB = new DoNothing();
-            _buttonW = new MoveForward(_moveDistance);
-            _buttonS = new MoveReverse(_moveDistance);
-            _buttonA = new MoveLeft(_moveDistance);
-            _buttonD = new MoveRight(_moveDistance);
+            _buttonW = new MoveForward(_moveDistance, _box);
+            _buttonS = new MoveReverse(_moveDistance, _box);
+            _buttonA = new MoveLeft(_moveDistance, _box);
+            _buttonD = new MoveRight(_moveDistance, _box);
             _buttonZ = new UndoCommand(_oldCommands);
         }
 
         private void Update()
         {
-            
             if (Input.GetKeyDown(KeyCode.A))
             {
-                if (_buttonA.Execute(_box))
+                if (_buttonA.TryExecute())
                 {
                     _oldCommands.Add(_buttonA);
                 }
             }
             else if (Input.GetKeyDown(KeyCode.B))
             {
-                if (_buttonB.Execute(_box))
+                if (_buttonB.TryExecute())
                 {
                     _oldCommands.Add(_buttonB);
                 }
             }
             else if (Input.GetKeyDown(KeyCode.D))
             {
-                if (_buttonD.Execute(_box))
+                if (_buttonD.TryExecute())
                 {
                     _oldCommands.Add(_buttonD);
                 }
             }
             else if (Input.GetKeyDown(KeyCode.S))
             {
-                if (_buttonS.Execute(_box))
+                if (_buttonS.TryExecute())
                 {
                     _oldCommands.Add(_buttonS);
                 }
             }
             else if (Input.GetKeyDown(KeyCode.W))
             {
-                if (_buttonW.Execute(_box))
+                if (_buttonW.TryExecute())
                 {
                     _oldCommands.Add(_buttonW);
                 }
             }
             else if (Input.GetKeyDown(KeyCode.Z))
             {
-                _buttonZ.Execute(_box);
+                _buttonZ.TryExecute();
             }
         }
     }

@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 
 namespace Asteroids.Proxy.ProxyProtection
 {
@@ -6,22 +7,25 @@ namespace Asteroids.Proxy.ProxyProtection
     {
         private readonly IWeapon _weapon;
         private readonly UnlockWeapon _unlockWeapon;
+        private readonly Text _text;
 
-        public WeaponProxy(IWeapon weapon, UnlockWeapon unlockWeapon)
+        public WeaponProxy(IWeapon weapon, UnlockWeapon unlockWeapon, Text text)
         {
             _weapon = weapon;
             _unlockWeapon = unlockWeapon;
+            _text = text;
         }
 
         public void Fire()
         {
+            _text.gameObject.SetActive(!_unlockWeapon.IsUnlock);
             if (_unlockWeapon.IsUnlock)
             {
                 _weapon.Fire();
             }
             else
             {
-                Debug.Log("Weapon is lock");
+                _text.text = "Weapon is lock";
             }
         }
     }

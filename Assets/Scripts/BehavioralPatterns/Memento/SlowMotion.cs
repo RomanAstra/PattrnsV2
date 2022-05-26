@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 
 public sealed class SlowMotion : MonoBehaviour
@@ -14,6 +13,7 @@ public sealed class SlowMotion : MonoBehaviour
             // Time.fixedDeltaTime = _timeScale * 0.05f;
         }
     }
+    
 
     private void Update()
     {

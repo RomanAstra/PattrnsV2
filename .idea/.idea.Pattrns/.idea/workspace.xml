@@ -1,26 +1,136 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="010c87b3-4dad-421e-bbab-92d314f958e4" name="Default Changelist" comment="" />
+    <list default="true" id="010c87b3-4dad-421e-bbab-92d314f958e4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Other/Soilid/Test.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Pattrns/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Pattrns/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BehavioralPatterns/Command/First/DoNothing.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BehavioralPatterns/Command/First/DoNothing.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BehavioralPatterns/Command/First/ICommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BehavioralPatterns/Command/First/ICommand.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BehavioralPatterns/Command/First/InputHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BehavioralPatterns/Command/First/InputHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BehavioralPatterns/Command/First/MoveForward.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BehavioralPatterns/Command/First/MoveForward.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BehavioralPatterns/Command/First/MoveLeft.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BehavioralPatterns/Command/First/MoveLeft.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BehavioralPatterns/Command/First/MoveReverse.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BehavioralPatterns/Command/First/MoveReverse.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BehavioralPatterns/Command/First/MoveRight.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BehavioralPatterns/Command/First/MoveRight.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BehavioralPatterns/Command/First/UndoCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BehavioralPatterns/Command/First/UndoCommand.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BehavioralPatterns/Interpreter/Example.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BehavioralPatterns/Interpreter/Example.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BehavioralPatterns/Iterator/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BehavioralPatterns/Iterator/Enemy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BehavioralPatterns/Memento/SlowMotion.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BehavioralPatterns/Memento/SlowMotion.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BehavioralPatterns/Observer/Asteroid/Asteroid.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BehavioralPatterns/Observer/Asteroid/Asteroid.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BehavioralPatterns/Observer/Asteroid/Display.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BehavioralPatterns/Observer/Asteroid/Display.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BehavioralPatterns/Observer/Asteroid/IDeath.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BehavioralPatterns/Observer/Asteroid/IDeath.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BehavioralPatterns/State/ExampleFirst/ConcreteStateA.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BehavioralPatterns/State/ExampleFirst/ConcreteStateA.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BehavioralPatterns/State/ExampleFirst/ConcreteStateB.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BehavioralPatterns/State/ExampleFirst/ConcreteStateB.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BehavioralPatterns/State/ExampleFirst/Context.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BehavioralPatterns/State/ExampleFirst/Player.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BehavioralPatterns/State/ExampleFirst/Context.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BehavioralPatterns/State/ExampleFirst/Player.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BehavioralPatterns/State/ExampleFirst/State.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BehavioralPatterns/State/ExampleFirst/State.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BehavioralPatterns/State/ExampleFirst/StateTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BehavioralPatterns/State/ExampleFirst/StateTest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BehavioralPatterns/TemplateMethod/ExampleFirst/TemplateMethodTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BehavioralPatterns/TemplateMethod/ExampleFirst/TemplateMethodTest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BehavioralPatterns/TemplateMethod/ExampleFirst/VK.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BehavioralPatterns/TemplateMethod/ExampleFirst/VK.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BehavioralPatterns/Visitor/ExampleHit/ApplayDamage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BehavioralPatterns/Visitor/ExampleHit/ApplayDamage.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BehavioralPatterns/Visitor/ExampleHit/ConsoleDisplay.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BehavioralPatterns/Visitor/ExampleHit/ConsoleDisplay.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BehavioralPatterns/Visitor/ExampleHit/IDealingDamage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BehavioralPatterns/Visitor/ExampleHit/IDealingDamage.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BehavioralPatterns/Visitor/ExampleHit/Visitor.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BehavioralPatterns/Visitor/ExampleHit/Visitor.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BehavioralPatterns/Visitor/ExampleHit/VisitorTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BehavioralPatterns/Visitor/ExampleHit/VisitorTest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CreationalPatterns/Builder/Example.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CreationalPatterns/Builder/Example.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CreationalPatterns/Builder/GameObjectBuilder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CreationalPatterns/Builder/GameObjectBuilder.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CreationalPatterns/Builder/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CreationalPatterns/Builder/Main.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CreationalPatterns/FactoryMethod/ActivatorExample.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CreationalPatterns/FactoryMethod/ActivatorExample.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CreationalPatterns/FactoryMethod/First/Gun.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CreationalPatterns/FactoryMethod/First/Gun.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CreationalPatterns/FactoryMethod/First/IUnitFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CreationalPatterns/FactoryMethod/First/IUnitFactory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CreationalPatterns/FactoryMethod/First/IWeapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CreationalPatterns/FactoryMethod/First/IWeapon.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CreationalPatterns/FactoryMethod/First/Starter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CreationalPatterns/FactoryMethod/First/Starter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CreationalPatterns/FactoryMethod/First/UnitFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CreationalPatterns/FactoryMethod/First/UnitFactory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CreationalPatterns/FactoryMethod/First/Weapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CreationalPatterns/FactoryMethod/First/Weapon.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CreationalPatterns/FactoryMethod/Second/Main.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CreationalPatterns/FactoryMethod/Second/Main.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CreationalPatterns/FactoryMethod/Second/Point.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CreationalPatterns/FactoryMethod/Second/Point.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CreationalPatterns/FactoryMethod/Second/Starter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CreationalPatterns/FactoryMethod/Second/Starter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CreationalPatterns/Fluent Builder/Example.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CreationalPatterns/Fluent Builder/Example.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CreationalPatterns/Object Pool/ObjectPool/ObjectPool.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CreationalPatterns/Object Pool/ObjectPool/ObjectPool.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CreationalPatterns/Object Pool/ObjectPool/ViewServices.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CreationalPatterns/Object Pool/ObjectPool/ViewServices.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CreationalPatterns/Prototype/ExamplePrototype.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CreationalPatterns/Prototype/ExamplePrototype.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CreationalPatterns/Prototype/ExampleSecond/PrototypeExample.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CreationalPatterns/Prototype/ExampleSecond/PrototypeExample.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CreationalPatterns/ServiceLocator/ExampleServiceLocator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CreationalPatterns/ServiceLocator/ExampleServiceLocator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CreationalPatterns/ServiceLocator/New Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CreationalPatterns/ServiceLocator/New Scene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CreationalPatterns/ServiceLocator/Service.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CreationalPatterns/ServiceLocator/Service.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CreationalPatterns/ServiceLocator/ServiceSecond.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CreationalPatterns/ServiceLocator/ServiceSecond.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CreationalPatterns/Singleton/ExampleSingleton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CreationalPatterns/Singleton/ExampleSingleton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CreationalPatterns/Singleton/New Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CreationalPatterns/Singleton/New Scene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CreationalPatterns/Singleton/Services.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CreationalPatterns/Singleton/Services.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CreationalPatterns/Singleton/TestSingletonMonoBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CreationalPatterns/Singleton/TestSingletonMonoBehaviour.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Extensions/ComponentExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Extensions/ComponentExtensions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MVVM/View/HpView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MVVM/View/HpView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MVVM/ViewManager/ITestViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MVVM/ViewManager/ITestViewModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MVVM/ViewManager/View.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MVVM/ViewManager/View.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MVVM/ViewModel/HpViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MVVM/ViewModel/HpViewModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Optimization/ExampleFirst.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Optimization/ExampleFirst.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Optimization/ExampleThree.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Optimization/ExampleThree.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Other/NullObject/FirstExample/NullObjectTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Other/NullObject/FirstExample/NullObjectTest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Other/TryParse/Example.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Other/TryParse/Example.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StructuralPatterns/Bridge/Example.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StructuralPatterns/Bridge/Example.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StructuralPatterns/Composite/Detachment.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StructuralPatterns/Composite/Detachment.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StructuralPatterns/Composite/Example.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StructuralPatterns/Composite/Example.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StructuralPatterns/Composite/IAttack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StructuralPatterns/Composite/IAttack.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StructuralPatterns/Composite/Unit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StructuralPatterns/Composite/Unit.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StructuralPatterns/Decorator/Weapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StructuralPatterns/Decorator/Weapon.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StructuralPatterns/Facade/Example.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StructuralPatterns/Facade/Example.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StructuralPatterns/Flyweight/LevelCompleted.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StructuralPatterns/Flyweight/LevelCompleted.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StructuralPatterns/Flyweight/New Material.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StructuralPatterns/Flyweight/New Material.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StructuralPatterns/Proxy/ProxyProtection/Example.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StructuralPatterns/Proxy/ProxyProtection/Example.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StructuralPatterns/Proxy/ProxyProtection/Weapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StructuralPatterns/Proxy/ProxyProtection/Weapon.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StructuralPatterns/Proxy/ProxyProtection/WeaponProxy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StructuralPatterns/Proxy/ProxyProtection/WeaponProxy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/ApiUpdaterCheck.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/ApiUpdaterCheck.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-AssetImportWorker0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-AssetImportWorker0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/PackageManagerSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/PackageManagerSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/10564ed154d647e194bef4aef887864913a400/f0/1ecae8df/ColorUtility.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6b1444477c1d41c692ef6c02a838308529ac30/b1/6b95a823/Task.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/10564ED1-54D6-47E1-94BE-F4AEF8878649/73/cfdbd985/ColorUtility.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/10564ed154d647e194bef4aef887864913a400/09/013a64c0/GameObject.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/10564ed154d647e194bef4aef887864913a400/b8/26ef0db2/Vector3.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/10564ed154d647e194bef4aef887864913a400/f0/1ecae8df/ColorUtility.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/10564ed154d647e194bef4aef887864913a400/f3/610b1ee5/Component.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/394C8FAE-4BA1-4DD2-A259-BD441D5BEF25/cc/14224db0/ObservableCollection`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/58A34B0A-618D-424B-B5FC-18BB9BCDAC20/c3/f08b99a6/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Other/Repository/SaveData/SaveDataRepository.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6B144447-7C1D-41C6-92EF-6C02A8383085/e0/c0414b48/IObserver`1.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6B144447-7C1D-41C6-92EF-6C02A8383085/c7/2b6d6f9e/List`1.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6B144447-7C1D-41C6-92EF-6C02A8383085/bf/041c36f8/IObservable`1.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/10564ED1-54D6-47E1-94BE-F4AEF8878649/73/cfdbd985/ColorUtility.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/BehavioralPatterns/Memento/SlowMotion.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7D971898-EA0F-4307-A8ED-DF491EA76525/ca/21d3897f/ContactPoint.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5a41d6b7189842eca409fd0b1c3e3dcf17bf78/55/43cfce02/Dictionary`2.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5a41d6b7189842eca409fd0b1c3e3dcf17bf78/9e/0683b88a/Task.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/62FFEEB7-EC02-4BEA-B61E-5FBF8D44AC5B/24/a90b295a/String.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6B144447-7C1D-41C6-92EF-6C02A8383085/bf/041c36f8/IObservable`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6B144447-7C1D-41C6-92EF-6C02A8383085/c7/2b6d6f9e/List`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6B144447-7C1D-41C6-92EF-6C02A8383085/e0/c0414b48/IObserver`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6b1444477c1d41c692ef6c02a838308529ac30/97/b9595181/List`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6b1444477c1d41c692ef6c02a838308529ac30/b1/6b95a823/Task.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6b1444477c1d41c692ef6c02a838308529ac30/d3/e824502f/Object.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7D971898-EA0F-4307-A8ED-DF491EA76525/ca/21d3897f/ContactPoint.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7d971898ea0f4307a8eddf491ea7652518000/43/2a9fb7c3/Rigidbody.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7d971898ea0f4307a8eddf491ea7652518000/c0/bf73459e/CharacterController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/af218701fe324032b521ddd91f13662b13b600/01/fdb3a597/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/af218701fe324032b521ddd91f13662b13b600/ae/effd257f/Behaviour.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/BehavioralPatterns/Memento/SlowMotion.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Other/Repository/SaveData/SaveDataRepository.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -77,6 +187,9 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/StructuralPatterns/Facade/GameService.cs" />
     </changedPaths>
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="1ie46dTaFKVMP6XiiGtdSalAgvM" />
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
@@ -84,17 +197,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.3502567" />
-    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.0" />
-    <property name="Discover.Launch.Via.Unity" value="true" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
-    <property name="vue.rearranger.settings.migration" value="true" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Discover.Launch.Via.Unity": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "rider.run.widget.enabled.cache": "false",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Asteroids.Chain_of_Responsibility.Second.Demo.Main" type="DotNetStaticMethod" factoryName=".NET Static Method" temporary="true">
       <option name="EXE_PATH" value="E:\Program\JetBrains Rider 2019.2.2\lib\ReSharperHost\JetLauncherILc.exe" />
@@ -112,6 +222,14 @@
         <option name="Build" />
       </method>
     </configuration>
+    <configuration name="UnitTests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2021.2.10f1\Editor\Unity.exe" />
+      <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath G:\Geekbrains\Паттерны\Pattrns -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
+      <option name="WORKING_DIRECTORY" value="G:\Geekbrains\Паттерны\Pattrns" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
@@ -122,10 +240,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="18996">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="18996" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -200,15 +318,79 @@
       <workItem from="1628317732074" duration="5276000" />
       <workItem from="1628445679776" duration="3476000" />
       <workItem from="1628927251314" duration="3979000" />
-      <workItem from="1629129629325" duration="2554000" />
+      <workItem from="1629129629325" duration="3157000" />
+      <workItem from="1629222987402" duration="5059000" />
+      <workItem from="1629531916896" duration="2954000" />
+      <workItem from="1629734648635" duration="7254000" />
+      <workItem from="1629993535155" duration="3006000" />
+      <workItem from="1630079897599" duration="2594000" />
+      <workItem from="1630431401670" duration="4872000" />
+      <workItem from="1630599053220" duration="5072000" />
+      <workItem from="1631642258358" duration="3588000" />
+      <workItem from="1631815619461" duration="3102000" />
+      <workItem from="1631962796326" duration="2225000" />
+      <workItem from="1632073530397" duration="4462000" />
+      <workItem from="1632160761393" duration="2232000" />
+      <workItem from="1632247500096" duration="3895000" />
+      <workItem from="1632559241396" duration="5874000" />
+      <workItem from="1632765231655" duration="2830000" />
+      <workItem from="1633370200331" duration="2750000" />
+      <workItem from="1633629516386" duration="3553000" />
+      <workItem from="1633967187564" duration="3930000" />
+      <workItem from="1634234140230" duration="3107000" />
+      <workItem from="1634572414218" duration="6069000" />
+      <workItem from="1634839039761" duration="2667000" />
+      <workItem from="1635089925504" duration="4201000" />
+      <workItem from="1635696058355" duration="2709000" />
+      <workItem from="1635782320264" duration="1960000" />
+      <workItem from="1636295650163" duration="2975000" />
+      <workItem from="1638287903273" duration="3741000" />
+      <workItem from="1639497740379" duration="3295000" />
+      <workItem from="1641743576466" duration="4200000" />
+      <workItem from="1641915678834" duration="10102000" />
+      <workItem from="1642347807828" duration="2726000" />
+      <workItem from="1642528499012" duration="3530000" />
+      <workItem from="1642701356918" duration="4159000" />
+      <workItem from="1643735647602" duration="3375000" />
+      <workItem from="1644170316802" duration="3485000" />
+      <workItem from="1644338404187" duration="3062000" />
+      <workItem from="1644854281022" duration="2927000" />
+      <workItem from="1645371344364" duration="4619000" />
+      <workItem from="1645717908115" duration="3959000" />
+      <workItem from="1646322774485" duration="3625000" />
+      <workItem from="1647791637083" duration="6478000" />
+      <workItem from="1648134267699" duration="3181000" />
+      <workItem from="1649003924330" duration="925000" />
+      <workItem from="1649004950871" duration="110000" />
+      <workItem from="1649346839376" duration="3388000" />
+      <workItem from="1649948428502" duration="4251000" />
+      <workItem from="1650208284719" duration="5379000" />
+      <workItem from="1650565751974" duration="1003000" />
+      <workItem from="1650796961921" duration="7561000" />
+      <workItem from="1653233449989" duration="4212000" />
+      <workItem from="1653405693769" duration="2295000" />
+      <workItem from="1653419378508" duration="735000" />
+      <workItem from="1653581791840" duration="9786000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>

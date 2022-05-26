@@ -2,5 +2,6 @@
 {
     internal interface IWeapon
     {
+        void Fire();
     }
 }

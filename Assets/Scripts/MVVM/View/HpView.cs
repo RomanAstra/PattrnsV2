@@ -1,4 +1,5 @@
-﻿using MVVM.ViewModel;
+﻿using System;
+using MVVM.ViewModel;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -21,9 +22,14 @@ namespace MVVM.View
             _text.text = _hpViewModel.IsDead ? "X_X" : currentHp.ToString();
         }
 
-        ~HpView()
+        private void OnDisable()
         {
             _hpViewModel.OnHpChange -= OnHpChange;
         }
+
+        // ~HpView()
+        // {
+        //     _hpViewModel.OnHpChange -= OnHpChange;
+        // }
     }
 }

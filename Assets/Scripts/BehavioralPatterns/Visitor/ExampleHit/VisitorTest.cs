@@ -23,8 +23,10 @@ namespace Visitor.ExampleHit
                 {
                     if (hit.collider.TryGetComponent<Hit>(out var damage))
                     {
-                        damage.Activate(new ConsoleDisplay(), new InfoCollision(Damage, hit.point, hit.normal, hit.collider.transform));
-                        damage.Activate(new ApplayDamage(), new InfoCollision(Damage, hit.point, hit.normal, hit.collider.transform));
+                        damage.Activate(new ConsoleDisplay(), 
+                            new InfoCollision(Damage, hit.point, hit.normal, hit.collider.transform));
+                        damage.Activate(new ApplayDamage(),
+                            new InfoCollision(Damage, hit.point, hit.normal, hit.collider.transform));
                     }
                 }
             }

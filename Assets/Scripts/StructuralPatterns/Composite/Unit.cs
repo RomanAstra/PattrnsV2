@@ -1,10 +1,13 @@
 ﻿namespace Asteroids.Composite
 {
-    internal sealed class Unit : IAttack
+    public sealed class Unit : IAttack
     {
-        public void Attack()
+        public float Hp { get; private set; }
+        public float Damage { get; }
+        
+        public void Attack(Unit unit)
         {
-            throw new System.NotImplementedException();
+            unit.Hp -= Damage;
         }
     }
 }

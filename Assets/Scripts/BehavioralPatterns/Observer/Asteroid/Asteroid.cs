@@ -6,7 +6,7 @@ namespace BehavioralPatterns.Observer.Asteroid
     {
         private float _hp;
         public string Name { get; }
-        public event Action OnDeathChange;
+        public event Action<string> OnDeathChange;
 
         public float Hp
         {
@@ -15,7 +15,7 @@ namespace BehavioralPatterns.Observer.Asteroid
                 _hp = value;
                 if (_hp <= 0)
                 {
-                    OnDeathChange?.Invoke();
+                    OnDeathChange?.Invoke(Name);
                 }
             }
         }

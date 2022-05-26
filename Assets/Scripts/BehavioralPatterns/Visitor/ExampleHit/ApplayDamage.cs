@@ -43,5 +43,10 @@ namespace Visitor.ExampleHit
             hit.Health -= info.Damage;
             hit.Text.text = hit.Health.ToString();
         }
+
+        public void Visit(HitImpl hit, InfoCollision info)
+        {
+            Object.Destroy(hit.gameObject);
+        }
     }
 }
