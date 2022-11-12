@@ -22,7 +22,8 @@ namespace Asteroids.Builder
                 .Name("Roman")
                 .Sprite(_sprite)
                 .Physics
-                .BoxCollider2D();
+                .BoxCollider2D()
+                .Rigidbody2D(6.0f);
         }
         
     }

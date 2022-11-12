@@ -13,7 +13,7 @@ namespace Asteroids.Command.First
         private ICommand _buttonD;
         private ICommand _buttonB;
         private ICommand _buttonZ;
-        private readonly List<ICommand> _oldCommands = new List<ICommand>();
+        private readonly List<ICommand> _oldCommands = new ();
 
         private void Start()
         {

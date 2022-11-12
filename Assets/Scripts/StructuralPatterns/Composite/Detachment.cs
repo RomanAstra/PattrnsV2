@@ -4,7 +4,7 @@ namespace Asteroids.Composite
 {
     internal sealed class Detachment : IAttack
     {
-        private List<IAttack> _attacks = new List<IAttack>();
+        private List<IAttack> _attacks = new();
 
         public void AddUnit(IAttack attack)
         {

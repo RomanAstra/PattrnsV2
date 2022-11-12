@@ -21,4 +21,6 @@ namespace Asteroids.First
             _viewServices.Destroy(bullet.gameObject);
         }
     }
+
+
 }

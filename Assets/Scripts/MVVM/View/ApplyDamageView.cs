@@ -1,4 +1,5 @@
-﻿using MVVM.ViewModel;
+﻿using System;
+using MVVM.ViewModel;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -15,6 +16,19 @@ namespace MVVM.View
             _hpViewModel = hpViewModel;
             _button.onClick.RemoveAllListeners();
             _button.onClick.AddListener(() => _hpViewModel.ApplyDamage(_damage));
+        }
+
+        private void OnCollisionEnter(Collision collision)
+        {
+            if (collision.gameObject.TryGetComponent(out Rigidbody t))
+            {
+                _hpViewModel.CollisionRigidbody();
+            }
+            if (collision.gameObject.TryGetComponent(out MeshRenderer t2))
+            {
+                _hpViewModel.CollisionMeshRenderer();
+            }
+
         }
     }
 }

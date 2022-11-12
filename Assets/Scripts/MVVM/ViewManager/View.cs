@@ -43,5 +43,15 @@ namespace MVVM.ViewManager
         {
             gameObject.SetActive(false);
         }
+
+        public void Unfocus()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Focus()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 namespace MVVM.ViewManager
 {
@@ -6,5 +7,11 @@ namespace MVVM.ViewManager
     {
         public string Text { get; }
         public Vector3 Position { get; set; }
+        public void Close()
+        {
+            throw new NotImplementedException();
+        }
+
+        public event Action<IViewModel> Closed;
     }
 }

@@ -6,13 +6,14 @@ namespace Asteroids.Proxy.ProxyProtection
     {
         private readonly Rigidbody _bullet;
         private readonly Transform _positionBarrel;
-        private float _force = 999.0f;
-        private float _timeToDestroy = 10.0f;
+        private readonly float _force;
+        private readonly float _timeToDestroy = 10.0f;
 
-        public Weapon(Rigidbody bulletPrefab, Transform positionBarrel)
+        public Weapon(Rigidbody bulletPrefab, Transform positionBarrel, float force)
         {
             _bullet = bulletPrefab;
             _positionBarrel = positionBarrel;
+            _force = force;
         }
         
         public void Fire()

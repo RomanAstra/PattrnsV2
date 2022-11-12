@@ -4,7 +4,7 @@
     {
         private void NameMethod()
         {
-            Main.CreateMain(Point.CreateDT(3, 6));
+            Main.CreateMain(Point.CreateWH(3, 6));
         }
     }
 }

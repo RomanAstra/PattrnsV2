@@ -7,6 +7,14 @@ namespace MVVM.ViewModel
     {
         private bool _isDead;
         public event Action<float> OnHpChange;
+        public void CollisionRigidbody()
+        {
+        }
+
+        public void CollisionMeshRenderer()
+        {
+        }
+
         public IHpModel HpModel { get; }
 
         public bool IsDead => _isDead;

@@ -9,5 +9,7 @@ namespace MVVM.ViewModel
         bool IsDead { get; }
         void ApplyDamage(float damage);
         event Action<float> OnHpChange;
+        void CollisionRigidbody();
+        void CollisionMeshRenderer();
     }
 }

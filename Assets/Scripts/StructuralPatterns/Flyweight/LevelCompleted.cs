@@ -41,7 +41,9 @@ namespace Asteroids.Flyweight
         }
 
 
-        private string GetPrefsKey(int level) =>
-            $"{LEVEL_COMPLETED}_{level}";
+        private string GetPrefsKey(int level)
+        {
+            return $"{LEVEL_COMPLETED}_{level}";
+        }
     }
 }

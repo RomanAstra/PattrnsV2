@@ -10,12 +10,5 @@ namespace Asteroids.Singleton
             Debug.Log(nameof(TestSingletonMonoBehaviour));
             Services.Instance.Test();
         }
-
-        public static TestSingletonMonoBehaviour InstanceBad;
-
-        private void Start()
-        {
-            InstanceBad = this;
-        }
     }
 }

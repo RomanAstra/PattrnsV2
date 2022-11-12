@@ -15,6 +15,15 @@ namespace Asteroids.Prototype
 
         public object Clone()
         {
+            return new PlayerData
+            {
+                Speed = Speed,
+                Hp = new Hp
+                {
+                    CurrentHP = Hp.CurrentHP,
+                    MaxHP = Hp.MaxHP,
+                }
+            };
             return MemberwiseClone();
         }
     }

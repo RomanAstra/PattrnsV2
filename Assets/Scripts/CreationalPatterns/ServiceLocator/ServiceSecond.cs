@@ -6,7 +6,7 @@ namespace Asteroids.ServiceLocator
     {
         public void Test()
         {
-            Debug.Log(nameof(ServiceSecond));
+            Debug.LogWarning(nameof(ServiceSecond));
         }
     }
 }

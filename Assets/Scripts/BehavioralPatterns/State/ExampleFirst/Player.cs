@@ -4,11 +4,17 @@ namespace BehavioralPatterns.State.ExampleFirst
 {
     public sealed class Player
     {
-        public float Hp;
+        private readonly Transform _playerView;
+        private float _hp;
         private State _state;
 
-        public Player(State state)
+        public Renderer Renderer { get; }
+
+        public Player(Transform playerView, State state, float hp)
         {
+            _playerView = playerView;
+            Renderer = _playerView.GetComponent<MeshRenderer>();
+            _hp = hp;
             State = state;
         }
 
@@ -17,13 +23,22 @@ namespace BehavioralPatterns.State.ExampleFirst
             set
             {
                 _state = value;
+                _state.Handle(this);
                 Debug.Log("State: " + _state.GetType().Name);
             }
         }
 
-        public void Request()
+        public float Hp
         {
-            _state.Handle(this);
+            get => _hp;
+            set
+            {
+                _hp = value;
+                if (_hp <= 0)
+                {
+                    State = new Died();
+                }
+            }
         }
     }
 }

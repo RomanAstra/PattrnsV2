@@ -50,7 +50,7 @@ namespace TryParse
                 rigidbody.AddForce(Vector3.zero * 999.0f);
             }
 
-            if (int.TryParse("tgdhjtfj", out int y))
+            if (int.TryParse("10", out int y))
             {
                 Debug.Log(y);
             }

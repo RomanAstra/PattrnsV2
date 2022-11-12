@@ -10,7 +10,7 @@ namespace Asteroids.Adapter
         private void Awake()
         {
             _camera = Camera.main;
-            _fire = new Enemy();
+            _fire = new NewAttackBullet();
         }
 
         private void Update()

@@ -45,8 +45,9 @@ namespace Asteroids.Iterator
         
         public IEnumerable<IAbility> GetAbility(DamageType index)
         {
-            foreach (IAbility ability in _ability)
+            for (var i = 0; i < _ability.Count; i++)
             {
+                IAbility ability = _ability[i];
                 if (ability.DamageType == index)
                 {
                     yield return ability;

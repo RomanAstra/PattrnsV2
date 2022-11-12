@@ -59,6 +59,7 @@ namespace Memento
                 PointInTime pointInTime = _pointsInTime[0];
                 transform.position = pointInTime.Position;
                 transform.rotation = pointInTime.Rotation;
+                _rb.velocity = pointInTime.Velocity;
                 _pointsInTime.RemoveAt(0);
             } 
             else
@@ -66,6 +67,7 @@ namespace Memento
                 PointInTime pointInTime = _pointsInTime[0];
                 transform.position = pointInTime.Position;
                 transform.rotation = pointInTime.Rotation;
+                _rb.velocity = pointInTime.Velocity;
                 StopRewind();
             }
         }

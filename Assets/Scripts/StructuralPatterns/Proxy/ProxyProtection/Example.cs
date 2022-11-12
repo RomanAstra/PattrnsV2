@@ -9,6 +9,7 @@ namespace Asteroids.Proxy.ProxyProtection
         [SerializeField] private Rigidbody _prefabBullet;
         [SerializeField] private Transform _barrel;
         [SerializeField] private Text _text;
+        [SerializeField, Range(0.0f, 900000.0f)] private float _force;
         private Weapon _weapon;
         private WeaponProxy _weaponProxy;
         private UnlockWeapon _unlockWeapon;
@@ -16,7 +17,7 @@ namespace Asteroids.Proxy.ProxyProtection
         private void Start()
         {
             _unlockWeapon = new UnlockWeapon(false);
-            _weapon = new Weapon(_prefabBullet, _barrel);
+            _weapon = new Weapon(_prefabBullet, _barrel, _force);
             _weaponProxy = new WeaponProxy(_weapon, _unlockWeapon, _text);
         }
 

@@ -1,10 +1,13 @@
-﻿namespace Other.Soilid
+﻿using UnityEngine;
+
+namespace Other.Soilid
 {
     internal abstract class Unit
     {
-        public float Hp { get; protected set; } 
-        public float Defense { get; } 
-        
+        public float Hp { get; set; } 
+        public float Defense { get; }
+        public Vector3 Position { get; set; }
+
         public virtual void GetDamage(float damage)
         {
             if (Defense > damage)

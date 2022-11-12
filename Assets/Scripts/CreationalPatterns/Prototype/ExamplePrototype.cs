@@ -32,6 +32,22 @@ namespace Asteroids.Prototype
             Debug.Log(playerDataNewNewNew);
 
             // Instantiate(_prefab);
+            var a = new A
+            {
+                T = 42
+            };
+            NameMethod(a); 
+            Debug.Log(a.T);
+        }
+
+        internal struct A
+        {
+            public int T;
+        }
+
+        private void NameMethod(A a)
+        {
+            a.T = 24;
         }
     }
 }
